@@ -16,6 +16,28 @@ ul.horizontal-menubar
 	width: 100%;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+@media screen and (max-device-width: 380px){
+	ul.horizontal-menubar	{
+		width: 100%;
+		max-width: 450px;
+	}
+	ul.horizontal-menubar li {
+		width: 140px;
+		height: 25px;
+	}
+
+}
+@media screen and (max-device-width: 1000px){
+	ul.horizontal-menubar	{
+		width: 100%;
+		max-width: 450px;
+	}
+	ul.horizontal-menubar li {
+		width: 160px;
+		height: 20px;
+	}
+
+}
 
 /* Menu item containers, position children relative to this container and are a fixed width */
 ul.horizontal-menubar li

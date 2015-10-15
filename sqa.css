@@ -10,29 +10,31 @@ body {
     line-height: 1.4;
     resize: horizontal;
     text-align: left;
-    width: 100%;
-    max-width: 1800px;
-    height: auto;
     position: relative;
+    width: 100%;
+    max-width: 1840px;
+    height: auto;
 }
 .container {
-    width: 100%;
+    width: 80.00%;
     max-width: 960px;
+    height: auto;
     background-color: #FFFFFF;
     margin: 0 auto;
     border: thin solid #033;
     text-align: left;
     vertical-align: top;
+    box-sizing: border-box;
 }
 header {
     background-color: #FFF;
-    width: auto;
     margin: 5px;
-    max-width: 950px;
     width: 100%;
+    max-width: 950px;
 }
 nav {
     width: 100%;
+    max-width: 950px;
     padding: 0px;
 }
 
@@ -43,9 +45,11 @@ header, section, footer, aside, article, figure {
 article {
     padding: 5px;
     width: 100%;
-    max-width: 950px;
+    max-width: 940px;
+    height: auto;
 }
-section p, section li {
+
+section li {
     color: rgb(102, 102, 102);
     font-family: NeueHaasGroteskText W01,Helvetica,Arial,sans-serif;
     font-size: 18px;
@@ -62,13 +66,13 @@ section p, section li {
 }
 
 .sidebar {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
     background-color: #FFF;
     padding: 5px;
     float: left;
-    width: auto;
-    max-width: 180px;
-    height: auto;
-    text-align: left;
+    text-align: center;
     clear: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -140,12 +144,12 @@ footer p {
     text-align: center;
 }
 
-@media screen and (max-width: 1024px){
- h1 {
+@media screen and (max-width: 1000px){
+    h1 {
         font-size: 18px;
     }
     .container {
-        background-color: whitesmoke;
+        background-color: white;
     }
     header {
         background-color: #FFF;
@@ -156,13 +160,65 @@ footer p {
         width: 100%;
         height: 90px;
     }
-    nav ul {
+
+    article {
         width: 100%;
-        height: 20px;
     }
+    .sidebar {
+        float: right;
+    }
+
+
+}
+
+@media screen and (max-device-width: 380px){
+    .container {
+        width: 100%;
+        max-width: 480px;
+    }
+    header {
+        background-color: #FFF;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+
+    }
+    header img {
+        width: 100%;
+        max-width: 480px;
+        height: 40px;
+        padding: 3px;
+    }
+     .sidebar {
+        max-width: 480px;
+        width: 100%;
+        padding: 3px;
+        float: none;
+    }
+    article {
+        width: 100%;
+        max-width: 480px;
+        padding: 0px;
+    }
+
     section p{
         font-size: 16px;
     }
+    nav ul li {
+        font-size: 14px;
+    }
+    footer {
+        padding: 3px;
+    }
+    footer img{
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 30px;
+        height: 30px;
+    }
+
+
+
 
 }
 
