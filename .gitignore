@@ -27,3 +27,14 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+.idea/misc.xml
+.idea/modules.xml
+.idea/sqa.iml
+.idea/vcs.xml
+.idea/workspace.xml
+aboutMe.html
+automation.html
+manual.html
+performance.html
+process.html
+tools.html
