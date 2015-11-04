@@ -5,11 +5,12 @@
 
 function fields_validation(){
     var valid=true;
-    var msg;
+    var requiredmsg;
+    var thankyoummsg;
 
     if(document.getElementById('first-name').value.length==0){
         valid=false;
-        msg='Please enter your first name';
+        requiredmsg='Please enter your first name';
         document.getElementById('first-name-error').style.display='inline';
         document.getElementById('first-name-error').style.color='red';
         document.getElementById('first-name').focus();
@@ -19,16 +20,20 @@ function fields_validation(){
     }
         if(document.getElementById('last-name').value.length==0){
             valid=false;
-            msg='Please enter your last name';
+            requiredmsg='Please enter all required information.';
             document.getElementById('last-name-error').style.display='inline';
             document.getElementById('last-name-error').style.color='red';
             document.getElementById('last-name-error').focus();
         }
         else{
+            thankyoummsg = 'Thank you for subscribing. We will sent you email with update. Please stay tuned.'
             document.getElementById('last-name-error').style.display='none';
         }
     if(valid==false){
-        alert(msg);
+        alert(requiredmsg);
+    }
+    if(valid==true) {
+        alert(thankyoummsg);
     }
     return valid;
 

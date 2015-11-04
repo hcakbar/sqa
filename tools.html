@@ -11,7 +11,170 @@
     </head>
    <body>
 
-   <h1>Coming soon..</h1>
+       <div class="container">
+           <header>
+               <a href="home.html" title="Home Page"><img src="images/sqa_banner.gif" alt="SQA banner" width="950" height="113" border="0"></a><br>
+
+               <nav>
+                   <ul id="Menu" class="horizontal-menubar">
+                       <li><a href="home.html">Home</a></li>
+                       <li>
+                           <a href="process.html" class="menubar-submenu">Process</a>
+                           <ul>
+                               <li><a href="manual.html">Manual</a></li>
+                               <li><a href="automation.html">Automation</a></li>
+                               <li><a href="performance.html">Performance</a> </li>
+                           </ul>
+                       </li>
+                       <li> <a href="tools.html">Tools</a>
+                       </li>
+                       <li><a href="subscribe.html">Subscribe</a></li>
+                       <li><a href="about.html">About</a></li>
+                   </ul>
+               </nav>
+               <br>
+
+           </header>
+
+           <div class="sidebar" >
+               <p>Get up-to date info!</p>
+               <a href="subscribe.html"><button onclick="window.location.href='/subscribe.html'"><input type="image" src="images/subscribe.jpg" alt="Subscribe button" id="subscribe-btn"/></button></a><br>
+               <img name="tools-image" src="images/tools.png" width="160" height="130" alt="Tools Image" >
+           </div>
+
+           <article>
+               <section>
+                   <h1>Software Assurance: Tools</h1>
+               </section>
+
+               <section>
+                   <p>
+                       This is a very common activity that is performed by every QA team to determine whether they have everything they
+                       need to proceed into the test execution phase. Also, this is a recurring activity before each cycle of testing in
+                       projects that involve multiple cycles. In order to not run into issues after the testing phase begins and realize
+                       that we entered the execution phase prematurely, every QA project needs to conduct a review to determine that it
+                       has all the inputs necessary for successful testing.
+                   </p>
+               </section>
+               <section>
+                   <P>Below are the most popular quality check tools:</P>
+                   <ol id="tools-lists">
+                       <ol>
+                           <li>Manual: Quality Check plan and executions result repositories:</li>
+                           <ol>
+                               <li><a href="http://www8.hp.com/us/en/software-solutions/quality-center-quality-management/" target="_blank">HP Quality Center</a> </li>
+                                <li><a href="http://www.gurock.com/testrail/" target="_blank">TestRail</a></li>
+                               <li><a href="https://msdn.microsoft.com/en-us/library/jj635157.aspx" target="_blank">Test Manager</a></li>
+                               <li><a href="https://confluence.atlassian.com/display/JIRAKB/Using+JIRA+for+Test+Case+Management" target="_blank">Atlassian: JIRS Test Case Management</a> </li>
+                           </ol>
+                       </ol>
+                       <li>Automation: Automated Test Scripts</li>
+                       <ol>
+                           <li><a href="http://www.seleniumhq.org/projects/webdriver/" target="_blank">WebDriver</a></li>
+                           <li><a href="http://www.seleniumhq.org/download/">Selenium IDE </a></li>
+                           <li><a href="https://cucumber.io/">Cucumber</a> </li>
+                           <li><a href="http://www8.hp.com/us/en/software-solutions/quality-center-quality-management/" target="_blank">HP Quick Test Pro </a></li>
+                       </ol>
+                       <li>Performance: Performance Check Tools</li>
+                       <ol>
+                           <li><a href="http://www8.hp.com/us/en/software-solutions/loadrunner-load-testing/" target="_blank">Load Runner</a></li>
+                           <li><a href="http://jmeter.apache.org/" target="_blank">Apache JMeter</a></li>
+                           <li><a href="http://www.neotys.com/product/overview-neoload.html" target="_blank">NeoLoad</a></li>
+
+                       </ol>
+                   </ol>
+               </section>
+               <section>
+                   <p>
+                       A check list facilitates this activity perfectly.  It lets you make a list of ‘things-needed’ ahead of time and to review each
+                       item sequentially. You can even reuse the sheet once created for subsequent test cycles too.
+                   </p>
+                   <p>The below is an example of a sample Test Readiness Review checklist: </p>
+               </section>
+           </article>
+
+           <table id="table2" cellspacing="0" cellpadding="0" border="1">
+               <thead id="table2-header">
+               <tr>
+                   <td id="left-col" valign="top" style="width:660px;height:auto">
+                       <b>Test Readiness Review (TRR) Criteria</b>
+                   </td>
+                   <td id="right-col" valign="top" style="width:310px;height:auto">
+                       <b>Status</b>
+                   </td>
+               </tr>
+               </thead>
+               <tbody id="table2-body">
+               <tr>
+                   <td >All the requirements finalized and analyzed</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td>Test plan created and reviewed</td>
+                   <td> Done</td>
+               </tr>
+               <tr>
+                   <td>Test cases preparation done</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Test case review and sign off</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Test data availability</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td>Smoke testing</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td>Sanity testing done?</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Team aware of the roles and responsibilities</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Team aware of the deliverables expected of them</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Team aware of the communication protocol</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Team’s access to the application, version controlling  tools, test management</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Team’s trained</td>
+                   <td>In Progress</td>
+               </tr>
+               <tr>
+                   <td> Technical aspects- server1 refreshed or not?</td>
+                   <td>Done</td>
+               </tr>
+               <tr>
+                   <td> Defect reporting standards are defined</td>
+                   <td>Done</td>
+               </tr>
+               </tbody>
+           </table>
+
+           <footer>
+               <a href="https://twitter.com/" target="_blank"><img src="images/twitter_icon.png"></a> <!-- image/link for twitter -->
+               <a href="https://www.facebook.com/" target="_blank"> <img src="images/fb_icon.png"></a> <!-- image/facebook -->
+               <a href="mailto:achowd01@baker.edu"? Subject="Hello" target="_top"><img src="images/email_icon.png"></a>  <!-- image/email -->
+               <p><img src="images/sqa_logo.png"> Copyright 2015 - Software Quality Assurance.</p>
+           </footer>
+       </div>
+
+       <script type="text/javascript">
+           var MenuBar1 = new Spry.Widget.MenuBar("Menu", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+       </script>
 
    </body>
 </html>
